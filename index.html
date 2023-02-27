@@ -30,7 +30,7 @@ General Public License version 3.
 
 <h3 id="modules">Modules
 <aside>(585 modules,
-    1471/8257 macros, 17.8%)</aside></h3>
+    1471/8262 macros, 17.8%)</aside></h3>
 <ul class="index-tree modules">
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
     <li class="has-children"><span title="code&#x2F;__DEFINES">__DEFINES</span><ul class="index-tree">
@@ -873,7 +873,7 @@ SPDX-License-Identifier: MIT</li>
 
 
 <h3 id="types">Types
-<aside>(654 detailed/1401 documented/27282 total, 5.1%)</aside></h3>
+<aside>(654 detailed/1403 documented/27298 total, 5.1%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a> - A grouping of tiles into a logical space, mostly used by map editors<ul class="index-tree">
@@ -890,6 +890,9 @@ Syndicate infiltrator</li>
     </ul></li>
     <li><a href="area/space.html" title="&#x2F;area&#x2F;space">space</a></li>
     <li><span class="no-substance" title="&#x2F;area&#x2F;survivalpod">Emergency Shelter</span> - Survival Pod</li>
+    <li><span class="no-substance" title="&#x2F;area&#x2F;template_noop">Area Passthrough</span> - Template noop (no operation) is used to skip a turf or area when the template is loaded this allows for template transparency
+ex. if a ship has gaps in it's design, you would use template_noop to fill these in so that when the ship moves z-level, any
+tiles these gaps land on will not be deleted and replaced with the ships (empty) tiles</li>
     </ul></li>
     <li class="has-children"><a href="atom.html" title="&#x2F;atom">atom</a> - The base type for nearly all physical objects in SS13<ul class="index-tree">
     <li class="has-children"><a href="atom/movable.html" title="&#x2F;atom&#x2F;movable">movable</a><ul class="index-tree">
@@ -2803,6 +2806,7 @@ uranium</li>
     <li><span class="no-substance">indestructible&#x2F;</span><a href="turf/open/indestructible/brazil.html" title="&#x2F;turf&#x2F;open&#x2F;indestructible&#x2F;brazil">..</a></li>
     <li><span class="no-substance" title="&#x2F;turf&#x2F;open&#x2F;lava">lava</span> - LAVA</li>
     </ul></li>
+    <li><span class="no-substance" title="&#x2F;turf&#x2F;template_noop">Turf Passthrough</span> - See above explanation</li>
     </ul></li>
     <li><a href="world.html" title="&#x2F;world">World</a> - Two possibilities exist: either we are alone in the Universe or we are not. Both are equally terrifying. ~ Arthur C. Clarke</li>
     </ul>
@@ -2811,7 +2815,7 @@ uranium</li>
 </main>
 <footer>
     yogstation.dme
-    <a href="https://github.com/Moltijoe/Yogstation/tree/fd071ca69a8961bb63593d0c82cbdac71809a910">fd071ca</a>
+    <a href="https://github.com/Moltijoe/Yogstation/tree/c2e07f090b9608064208668a656da6a54247ae86">c2e07f0</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
 </body>
 </html>
