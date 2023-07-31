@@ -29,8 +29,8 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(691 modules,
-    1851/8839 macros, 20.9%)</aside></h3>
+<aside>(697 modules,
+    1875/8880 macros, 21.1%)</aside></h3>
 <ul class="index-tree modules">
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
     <li class="has-children"><span title="code&#x2F;__DEFINES">__DEFINES</span><ul class="index-tree">
@@ -105,6 +105,7 @@ General Public License version 3.
     <li><a href="code/__DEFINES/dcs/signals/signals_wash.html" title="code&#x2F;__DEFINES&#x2F;dcs&#x2F;signals&#x2F;signals_wash">signals_wash</a></li>
     </ul></li>
     </ul></li>
+    <li><a href="code/__DEFINES/directional.html" title="code&#x2F;__DEFINES&#x2F;directional">directional</a></li>
     <li><a href="code/__DEFINES/diseases.html" title="code&#x2F;__DEFINES&#x2F;diseases">diseases</a></li>
     <li><a href="code/__DEFINES/dynamic.html" title="code&#x2F;__DEFINES&#x2F;dynamic">dynamic</a></li>
     <li><a href="code/__DEFINES/economy.html" title="code&#x2F;__DEFINES&#x2F;economy">economy</a></li>
@@ -155,7 +156,9 @@ General Public License version 3.
     <li><a href="code/__HELPERS/_lists.html" title="code&#x2F;__HELPERS&#x2F;_lists">_lists</a></li>
     <li><a href="code/__HELPERS/_logging.html" title="code&#x2F;__HELPERS&#x2F;_logging">_logging</a></li>
     <li><a href="code/__HELPERS/areas.html" title="code&#x2F;__HELPERS&#x2F;areas">areas</a></li>
+    <li><a href="code/__HELPERS/cmp.html" title="code&#x2F;__HELPERS&#x2F;cmp">cmp</a></li>
     <li><a href="code/__HELPERS/colors.html" title="code&#x2F;__HELPERS&#x2F;colors">colors</a></li>
+    <li><a href="code/__HELPERS/duplicating.html" title="code&#x2F;__HELPERS&#x2F;duplicating">duplicating</a></li>
     <li><a href="code/__HELPERS/files.html" title="code&#x2F;__HELPERS&#x2F;files">files</a></li>
     <li><a href="code/__HELPERS/game.html" title="code&#x2F;__HELPERS&#x2F;game">game</a></li>
     <li><a href="code/__HELPERS/global_lists.html" title="code&#x2F;__HELPERS&#x2F;global_lists">global_lists</a></li>
@@ -365,6 +368,7 @@ SPDX-License-Identifier: MIT</li>
     <li><a href="code/game/objects/effects/info.html" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;info">info</a></li>
     <li><a href="code/game/objects/effects/landmarks.html" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;landmarks">landmarks</a></li>
     <li><span class="no-substance">spawners&#x2F;</span><a href="code/game/objects/effects/spawners/lootdrop.html" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;spawners&#x2F;lootdrop">lootdrop</a></li>
+    <li><a href="code/game/objects/effects/turf_fire.html" title="code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;turf_fire">turf_fire</a></li>
     </ul></li>
     <li class="has-children"><span title="code&#x2F;game&#x2F;objects&#x2F;items">items</span><ul class="index-tree">
     <li><a href="code/game/objects/items/AI_modules.html" title="code&#x2F;game&#x2F;objects&#x2F;items&#x2F;AI_modules">AI_modules</a></li>
@@ -521,6 +525,7 @@ SPDX-License-Identifier: MIT</li>
     <li class="has-children"><a href="code/modules/asset_cache.html" title="code&#x2F;modules&#x2F;asset_cache">Asset cache system</a><ul class="index-tree">
     <li><a href="code/modules/asset_cache/asset_cache_item.html" title="code&#x2F;modules&#x2F;asset_cache&#x2F;asset_cache_item">asset_cache_item</a></li>
     <li><a href="code/modules/asset_cache/asset_list.html" title="code&#x2F;modules&#x2F;asset_cache&#x2F;asset_list">asset_list</a></li>
+    <li><span class="no-substance">assets&#x2F;</span><a href="code/modules/asset_cache/assets/crafting.html" title="code&#x2F;modules&#x2F;asset_cache&#x2F;assets&#x2F;crafting">crafting</a></li>
     <li class="has-children"><span title="code&#x2F;modules&#x2F;asset_cache&#x2F;transports">transports</span><ul class="index-tree">
     <li><a href="code/modules/asset_cache/transports/asset_transport.html" title="code&#x2F;modules&#x2F;asset_cache&#x2F;transports&#x2F;asset_transport">asset_transport</a></li>
     <li><a href="code/modules/asset_cache/transports/webroot_transport.html" title="code&#x2F;modules&#x2F;asset_cache&#x2F;transports&#x2F;webroot_transport">webroot_transport</a></li>
@@ -800,7 +805,10 @@ transformations and other events that cause new languages to become available.</
     <li><span class="no-substance">energy&#x2F;</span><a href="code/modules/projectiles/guns/energy/laser.html" title="code&#x2F;modules&#x2F;projectiles&#x2F;guns&#x2F;energy&#x2F;laser">laser</a></li>
     <li><span class="no-substance">misc&#x2F;</span><a href="code/modules/projectiles/guns/misc/medbeam.html" title="code&#x2F;modules&#x2F;projectiles&#x2F;guns&#x2F;misc&#x2F;medbeam">medbeam</a></li>
     </ul></li>
-    <li><span class="no-substance">projectile&#x2F;</span><a href="code/modules/projectiles/projectile/magic.html" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile&#x2F;magic">magic</a></li>
+    <li class="has-children"><span title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile">projectile</span><ul class="index-tree">
+    <li><a href="code/modules/projectiles/projectile/beams.html" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile&#x2F;beams">beams</a></li>
+    <li><a href="code/modules/projectiles/projectile/magic.html" title="code&#x2F;modules&#x2F;projectiles&#x2F;projectile&#x2F;magic">magic</a></li>
+    </ul></li>
     </ul></li>
     <li class="has-children"><span title="code&#x2F;modules&#x2F;reagents">reagents</span><ul class="index-tree">
     <li class="has-children"><a href="code/modules/reagents/chemistry.html" title="code&#x2F;modules&#x2F;reagents&#x2F;chemistry">chemistry</a> - <strong>NOTE: IF YOU UPDATE THE REAGENT-SYSTEM, ALSO UPDATE THIS README.</strong><ul class="index-tree">
@@ -1019,7 +1027,7 @@ SPDX-License-Identifier: MIT</li>
 
 
 <h3 id="types">Types
-<aside>(875 detailed/1674 documented/28025 total, 6%)</aside></h3>
+<aside>(879 detailed/1681 documented/28052 total, 6%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a> - A grouping of tiles into a logical space, mostly used by map editors<ul class="index-tree">
@@ -1339,6 +1347,7 @@ The namespace folder's name will change if any of the assets change. (excluding 
     </ul></li>
     <li class="has-children"><a href="datum/asset/spritesheet.html" title="&#x2F;datum&#x2F;asset&#x2F;spritesheet">spritesheet</a><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;datum&#x2F;asset&#x2F;spritesheet&#x2F;antagonists">antagonists</span> - Sprites generated for the antagonists panel</li>
+    <li><a href="datum/asset/spritesheet/crafting.html" title="&#x2F;datum&#x2F;asset&#x2F;spritesheet&#x2F;crafting">crafting</a> - Representative icons for the contents of each crafting recipe.</li>
     <li><a href="datum/asset/spritesheet/decals.html" title="&#x2F;datum&#x2F;asset&#x2F;spritesheet&#x2F;decals">floor_decals</a></li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;asset&#x2F;spritesheet&#x2F;preferences">preferences</span> - Assets generated from <code>/datum/preference</code> icons</li>
     </ul></li>
@@ -1506,7 +1515,7 @@ for scheduling different subsystems for different stages of the round</li>
     <li><a href="datum/crafting_recipe/blackcoffin.html" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;blackcoffin">Black Coffin</a> - From recipes.dm</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;bloodaltar">Blood Altar</span> - Structures</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;chisel">Chisel</span> - Tools</li>
-    <li class="has-children"><span class="no-substance" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;food">food</span><ul class="index-tree">
+    <li class="has-children"><a href="datum/crafting_recipe/food.html" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;food">food</a><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;food&#x2F;aesirsalad">Aesir Salad</span> - SALADS</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;food&#x2F;amanitajelly">Amanita Jelly</span> - SOUP</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;crafting_recipe&#x2F;food&#x2F;amanitapie">Amanita Pie</span> - PIES</li>
@@ -1666,6 +1675,7 @@ and don't call start() in a loop that will be repeated otherwise it'll get spamm
     <li><span class="no-substance" title="&#x2F;datum&#x2F;eldritch_transmutation&#x2F;curse">curse</span> - Subtypes</li>
     </ul></li>
     <li class="has-children"><a href="datum/element.html" title="&#x2F;datum&#x2F;element">element</a> - A holder for simple behaviour that can be attached to many different types<ul class="index-tree">
+    <li><a href="datum/element/climbable.html" title="&#x2F;datum&#x2F;element&#x2F;climbable">climbable</a></li>
     <li><a href="datum/element/connect_loc.html" title="&#x2F;datum&#x2F;element&#x2F;connect_loc">connect_loc</a> - This element hooks a signal onto the loc the current object is on.
 When the object moves, it will unhook the signal and rehook it to the new object.</li>
     <li><a href="datum/element/content_barfer.html" title="&#x2F;datum&#x2F;element&#x2F;content_barfer">content_barfer</a> - Content Barfer; which expels the contents of a mob when it dies, or is transformed</li>
@@ -1687,7 +1697,7 @@ A group of fluid objects.</li>
     <li><a href="datum/gas.html" title="&#x2F;datum&#x2F;gas">gas</a></li>
     <li><a href="datum/gas_mixture.html" title="&#x2F;datum&#x2F;gas_mixture">gas_mixture</a></li>
     <li class="has-children"><span title="&#x2F;datum&#x2F;gas_reaction">gas_reaction</span><ul class="index-tree">
-    <li><span class="no-substance" title="&#x2F;datum&#x2F;gas_reaction&#x2F;freonformation">Freon formation</span> - More heat means higher chance to react but less efficiency, i.e. higher speed lower yield
+    <li><span class="no-substance" title="&#x2F;datum&#x2F;gas_reaction&#x2F;freonformation">Freon formation</span> - the more heat you use the higher is this factor
 the more moles you use and the higher the heat, the higher is the efficiency</li>
     <li><a href="datum/gas_reaction/nitro_ball.html" title="&#x2F;datum&#x2F;gas_reaction&#x2F;nitro_ball">Nitrium Energy Ball</a></li>
     <li><a href="datum/gas_reaction/pluonium_bz_response.html" title="&#x2F;datum&#x2F;gas_reaction&#x2F;pluonium_bz_response">Pluonium bz response</a> - Pluonium BZase Action</li>
@@ -1848,7 +1858,8 @@ Convert a certain amount of vassals</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;bloodsucker&#x2F;solars">solars</span> - Destroy the Solar Arrays</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;bloodsucker&#x2F;vassalhim">vassalhim</span> - Vassalize a target.</li>
     </ul></li>
-    <li class="has-children"><a href="datum/objective/minor.html" title="&#x2F;datum&#x2F;objective&#x2F;minor">Minor Objectives</a> - Objectives given to traitors without hijack or martyr, just small flavour things that shouldn't be too hard or impactful.<ul class="index-tree">
+    <li><a href="datum/objective/break_machinery.html" title="&#x2F;datum&#x2F;objective&#x2F;break_machinery">Destroy some machines</a> - Break shit - the objective</li>
+    <li class="has-children"><span title="&#x2F;datum&#x2F;objective&#x2F;minor">Minor Objectives</span> - Objectives given to traitors without hijack or martyr, just small flavour things that shouldn't be too hard or impactful.<ul class="index-tree">
     <li><a href="datum/objective/minor/deadpics.html" title="&#x2F;datum&#x2F;objective&#x2F;minor&#x2F;deadpics">Take a picture of your target&#x27;s dead body</a> - Escape with a picture of their dead body</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;minor&#x2F;mindshield">Mindshielding</span> - get mindshielded</li>
     <li><a href="datum/objective/minor/pet.html" title="&#x2F;datum&#x2F;objective&#x2F;minor&#x2F;pet">Kill Pet</a> - Kill Pet</li>
@@ -2363,6 +2374,9 @@ Will yield a &quot;?&quot;</li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;effect&#x2F;abstract">abstract</span><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;obj&#x2F;effect&#x2F;abstract&#x2F;chasm_storage">chasm depths</span> - An abstract object which is basically just a bag that the chasm puts people inside</li>
     <li><a href="obj/effect/abstract/info.html" title="&#x2F;obj&#x2F;effect&#x2F;abstract&#x2F;info">info</a> - An info button that, when clicked, puts some text in the user's chat</li>
+    <li class="has-children"><a href="obj/effect/abstract/turf_fire.html" title="&#x2F;obj&#x2F;effect&#x2F;abstract&#x2F;turf_fire">turf_fire</a><ul class="index-tree">
+    <li><span class="no-substance" title="&#x2F;obj&#x2F;effect&#x2F;abstract&#x2F;turf_fire&#x2F;magical">magical</span> - All the subtypes are for adminbussery and or mapping</li>
+    </ul></li>
     </ul></li>
     <li><span class="no-substance">anomaly&#x2F;</span><a href="obj/effect/anomaly/pyro.html" title="&#x2F;obj&#x2F;effect&#x2F;anomaly&#x2F;pyro">pyroclastic anomaly</a></li>
     <li><span class="no-substance">beam&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;effect&#x2F;beam&#x2F;i_beam">infrared beam</span> - IBeam</li>
@@ -2937,6 +2951,7 @@ Given to Nuke Ops members.</li>
     <li><a href="obj/item/pitchfork.html" title="&#x2F;obj&#x2F;item&#x2F;pitchfork">pitchfork</a></li>
     <li><a href="obj/item/plate.html" title="&#x2F;obj&#x2F;item&#x2F;plate">plate</a></li>
     <li class="has-children"><a href="obj/item/projectile.html" title="&#x2F;obj&#x2F;item&#x2F;projectile">projectile</a><ul class="index-tree">
+    <li><span class="no-substance">beam&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;beam&#x2F;bfg">searing rod</span> - BFG</li>
     <li><span class="no-substance">bullet&#x2F;reusable&#x2F;</span><a href="obj/item/projectile/bullet/reusable/foam_dart.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;bullet&#x2F;reusable&#x2F;foam_dart">foam dart</a></li>
     <li class="has-children"><a href="obj/item/projectile/magic.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;magic">bolt of nothing</a><ul class="index-tree">
     <li class="has-children"><a href="obj/item/projectile/magic/aoe.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;magic&#x2F;aoe">aoe</a> - Gives magic projectiles an area of effect radius that will bump into any nearby mobs<ul class="index-tree">
@@ -3330,7 +3345,7 @@ uranium</li>
 </main>
 <footer>
     yogstation.dme
-    <a href="https://github.com/Moltijoe/Yogstation/tree/a7f059d8df1d40391af925ccb405832e37dfa7f4">a7f059d</a>
+    <a href="https://github.com/Moltijoe/Yogstation/tree/dda94d759574d594fd5212e6b4947aa4e75035ab">dda94d7</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
 </body>
 </html>
