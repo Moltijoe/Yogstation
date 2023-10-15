@@ -29,8 +29,8 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(713 modules,
-    1910/9062 macros, 21.1%)</aside></h3>
+<aside>(715 modules,
+    1915/9066 macros, 21.1%)</aside></h3>
 <ul class="index-tree modules">
     <li><span class="no-substance">_maps&#x2F;map_files&#x2F;</span><a href="_maps/map_files/IceMeta.html" title="_maps&#x2F;map_files&#x2F;IceMeta">IceMeta</a></li>
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
@@ -241,6 +241,7 @@ SPDX-License-Identifier: MIT</li>
     <li class="has-children"><a href="code/datums/components.html" title="code&#x2F;datums&#x2F;components">Datum Component System (DCS)</a><ul class="index-tree">
     <li><a href="code/datums/components/_component.html" title="code&#x2F;datums&#x2F;components&#x2F;_component">_component</a></li>
     <li><a href="code/datums/components/action_item_overlay.html" title="code&#x2F;datums&#x2F;components&#x2F;action_item_overlay">action_item_overlay</a></li>
+    <li><a href="code/datums/components/anti_magic.html" title="code&#x2F;datums&#x2F;components&#x2F;anti_magic">anti_magic</a></li>
     <li><a href="code/datums/components/bakeable.html" title="code&#x2F;datums&#x2F;components&#x2F;bakeable">bakeable</a></li>
     <li><a href="code/datums/components/chasm.html" title="code&#x2F;datums&#x2F;components&#x2F;chasm">chasm</a></li>
     <li><span class="no-substance">crafting&#x2F;</span><a href="code/datums/components/crafting/antag.html" title="code&#x2F;datums&#x2F;components&#x2F;crafting&#x2F;antag">antag</a></li>
@@ -584,6 +585,7 @@ SPDX-License-Identifier: MIT</li>
     <li><a href="code/modules/client/preferences/ambient_occlusion.html" title="code&#x2F;modules&#x2F;client&#x2F;preferences&#x2F;ambient_occlusion">ambient_occlusion</a></li>
     <li><a href="code/modules/client/preferences/assets.html" title="code&#x2F;modules&#x2F;client&#x2F;preferences&#x2F;assets">assets</a></li>
     <li><a href="code/modules/client/preferences/bar_choice.html" title="code&#x2F;modules&#x2F;client&#x2F;preferences&#x2F;bar_choice">bar_choice</a></li>
+    <li><a href="code/modules/client/preferences/clerk_choice.html" title="code&#x2F;modules&#x2F;client&#x2F;preferences&#x2F;clerk_choice">clerk_choice</a></li>
     <li><a href="code/modules/client/preferences/clothing.html" title="code&#x2F;modules&#x2F;client&#x2F;preferences&#x2F;clothing">clothing</a></li>
     <li><a href="code/modules/client/preferences/engineering_department.html" title="code&#x2F;modules&#x2F;client&#x2F;preferences&#x2F;engineering_department">engineering_department</a></li>
     <li><a href="code/modules/client/preferences/gender.html" title="code&#x2F;modules&#x2F;client&#x2F;preferences&#x2F;gender">gender</a></li>
@@ -1051,7 +1053,7 @@ SPDX-License-Identifier: MIT</li>
 
 
 <h3 id="types">Types
-<aside>(938 detailed/1741 documented/28437 total, 6.1%)</aside></h3>
+<aside>(941 detailed/1745 documented/28444 total, 6.1%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a> - A grouping of tiles into a logical space, mostly used by map editors<ul class="index-tree">
@@ -1431,6 +1433,7 @@ The namespace folder's name will change if any of the assets change. (excluding 
     <li class="has-children"><a href="datum/component.html" title="&#x2F;datum&#x2F;component">Component</a> - The component datum<ul class="index-tree">
     <li><a href="datum/component/action_item_overlay.html" title="&#x2F;datum&#x2F;component&#x2F;action_item_overlay">action_item_overlay</a> - Apply to an action to allow it to take an item
 and apply it as an overlay of the action button</li>
+    <li><a href="datum/component/anti_magic.html" title="&#x2F;datum&#x2F;component&#x2F;anti_magic">anti_magic</a> - This provides different types of magic resistance on an object</li>
     <li><a href="datum/component/bakeable.html" title="&#x2F;datum&#x2F;component&#x2F;bakeable">bakeable</a> - This component indicates this object can be baked in an oven.</li>
     <li><a href="datum/component/chasm.html" title="&#x2F;datum&#x2F;component&#x2F;chasm">chasm</a></li>
     <li><span class="no-substance">construction&#x2F;</span><span class="no-substance" title="&#x2F;datum&#x2F;component&#x2F;construction&#x2F;mecha">mecha</span> - Construction datums</li>
@@ -1714,6 +1717,7 @@ and don't call start() in a loop that will be repeated otherwise it'll get spamm
     </ul></li>
     </ul></li>
     <li class="has-children"><a href="datum/eldritch_transmutation.html" title="&#x2F;datum&#x2F;eldritch_transmutation">Transmutation Recipe</a><ul class="index-tree">
+    <li><a href="datum/eldritch_transmutation/basic.html" title="&#x2F;datum&#x2F;eldritch_transmutation&#x2F;basic">Attune Heart</a></li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;eldritch_transmutation&#x2F;curse">curse</span> - Subtypes</li>
     <li><a href="datum/eldritch_transmutation/knowledge_ritual.html" title="&#x2F;datum&#x2F;eldritch_transmutation&#x2F;knowledge_ritual">Ritual of Knowledge</a></li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;eldritch_transmutation&#x2F;rust_blade">Rusty Blade</span> - grants the ascended heretic 9 points to spend</li>
@@ -1925,6 +1929,7 @@ Used for preferences such as clothing.<ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;datum&#x2F;preference&#x2F;choiced&#x2F;ai_core_display">ai_core_display</span> - What to show on the AI screen</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;preference&#x2F;choiced&#x2F;backpack">backpack</span> - Backpack preference</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;preference&#x2F;choiced&#x2F;bar_choice">bar_choice</span> - Which bar to spawn on boxstation</li>
+    <li><span class="no-substance" title="&#x2F;datum&#x2F;preference&#x2F;choiced&#x2F;clerk_choice">clerk_choice</span> - Which clerk shop to spawn on boxstation</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;preference&#x2F;choiced&#x2F;engineering_department">engineering_department</span> - Which department to put station engineers in</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;preference&#x2F;choiced&#x2F;gender">gender</span> - Gender preference</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;preference&#x2F;choiced&#x2F;ghost_accessories">ghost_accessories</span> - Determines what accessories your ghost will look like they have.</li>
@@ -2749,6 +2754,7 @@ Attacking any human mob (typically yourself) will cause their arm to instantly b
     <li class="has-children"><a href="obj/item/clothing.html" title="&#x2F;obj&#x2F;item&#x2F;clothing">clothing</a><ul class="index-tree">
     <li><span class="no-substance">accessory&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;dogtags">Dogtags</span> - Dog Tags</li>
     <li class="has-children"><a href="obj/item/clothing/head.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head">head</a><ul class="index-tree">
+    <li><a href="obj/item/clothing/head/foilhat.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head&#x2F;foilhat">tinfoil hat</a></li>
     <li><a href="obj/item/clothing/head/hardhat.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head&#x2F;hardhat">hard hat</a></li>
     <li class="has-children"><a href="obj/item/clothing/head/helmet.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head&#x2F;helmet">helmet</a><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head&#x2F;helmet&#x2F;plated">empty plated helmet</span> - PLATED ARMOR</li>
@@ -3032,18 +3038,6 @@ Given to Nuke Ops members.</li>
     <li><a href="obj/item/pitchfork.html" title="&#x2F;obj&#x2F;item&#x2F;pitchfork">pitchfork</a></li>
     <li><a href="obj/item/plate.html" title="&#x2F;obj&#x2F;item&#x2F;plate">plate</a></li>
     <li><a href="obj/item/pneumatic_cannon.html" title="&#x2F;obj&#x2F;item&#x2F;pneumatic_cannon">pneumatic cannon</a></li>
-    <li class="has-children"><a href="obj/item/projectile.html" title="&#x2F;obj&#x2F;item&#x2F;projectile">projectile</a><ul class="index-tree">
-    <li><span class="no-substance">beam&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;beam&#x2F;bfg">searing rod</span> - BFG</li>
-    <li><span class="no-substance">bullet&#x2F;reusable&#x2F;</span><a href="obj/item/projectile/bullet/reusable/foam_dart.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;bullet&#x2F;reusable&#x2F;foam_dart">foam dart</a></li>
-    <li><span class="no-substance">energy&#x2F;nuclear_particle&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;energy&#x2F;nuclear_particle&#x2F;strong">high-energy particle</span> - stronger particles</li>
-    <li class="has-children"><a href="obj/item/projectile/magic.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;magic">bolt of nothing</a><ul class="index-tree">
-    <li class="has-children"><a href="obj/item/projectile/magic/aoe.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;magic&#x2F;aoe">aoe</a> - Gives magic projectiles an area of effect radius that will bump into any nearby mobs<ul class="index-tree">
-    <li><a href="obj/item/projectile/magic/aoe/lightning.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;magic&#x2F;aoe&#x2F;lightning">lightning bolt</a></li>
-    </ul></li>
-    <li><a href="obj/item/projectile/magic/fireball.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;magic&#x2F;fireball">bolt of fireball</a></li>
-    </ul></li>
-    <li><a href="obj/item/projectile/wire.html" title="&#x2F;obj&#x2F;item&#x2F;projectile&#x2F;wire">hook</a> - Projectile</li>
-    </ul></li>
     <li><span class="no-substance">radio&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;radio&#x2F;borg">cyborg radio</span> - Borg Radios</li>
     <li><a href="obj/item/rcl.html" title="&#x2F;obj&#x2F;item&#x2F;rcl">rapid cable layer</a></li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;item&#x2F;reagent_containers">reagent_containers</span><ul class="index-tree">
@@ -3317,6 +3311,18 @@ then shoots (and detonates) them at Lavaland Z-level GPS coordinates provided.</
     <li><a href="obj/mecha/working/clarke.html" title="&#x2F;obj&#x2F;mecha&#x2F;working&#x2F;clarke">Clarke</a> - Lavaproof, fireproof, fast mech with low armor and higher energy consumption, cannot strafe and has an internal ore box.</li>
     </ul></li>
     </ul></li>
+    <li class="has-children"><a href="obj/projectile.html" title="&#x2F;obj&#x2F;projectile">projectile</a><ul class="index-tree">
+    <li><span class="no-substance">beam&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;projectile&#x2F;beam&#x2F;bfg">searing rod</span> - BFG</li>
+    <li><span class="no-substance">bullet&#x2F;reusable&#x2F;</span><a href="obj/projectile/bullet/reusable/foam_dart.html" title="&#x2F;obj&#x2F;projectile&#x2F;bullet&#x2F;reusable&#x2F;foam_dart">foam dart</a></li>
+    <li><span class="no-substance">energy&#x2F;nuclear_particle&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;projectile&#x2F;energy&#x2F;nuclear_particle&#x2F;strong">high-energy particle</span> - stronger particles</li>
+    <li class="has-children"><a href="obj/projectile/magic.html" title="&#x2F;obj&#x2F;projectile&#x2F;magic">bolt of nothing</a><ul class="index-tree">
+    <li class="has-children"><a href="obj/projectile/magic/aoe.html" title="&#x2F;obj&#x2F;projectile&#x2F;magic&#x2F;aoe">aoe</a> - Gives magic projectiles an area of effect radius that will bump into any nearby mobs<ul class="index-tree">
+    <li><a href="obj/projectile/magic/aoe/lightning.html" title="&#x2F;obj&#x2F;projectile&#x2F;magic&#x2F;aoe&#x2F;lightning">lightning bolt</a></li>
+    </ul></li>
+    <li><a href="obj/projectile/magic/fireball.html" title="&#x2F;obj&#x2F;projectile&#x2F;magic&#x2F;fireball">bolt of fireball</a></li>
+    </ul></li>
+    <li><a href="obj/projectile/wire.html" title="&#x2F;obj&#x2F;projectile&#x2F;wire">hook</a> - Projectile</li>
+    </ul></li>
     <li><span class="no-substance">singularity&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;singularity&#x2F;wizard">tear in the fabric of reality</span> - TEAR IN REALITY</li>
     <li class="has-children"><span title="&#x2F;obj&#x2F;structure">structure</span><ul class="index-tree">
     <li><span class="no-substance">alien&#x2F;resin&#x2F;</span><a href="obj/structure/alien/resin/flower_bud_enemy.html" title="&#x2F;obj&#x2F;structure&#x2F;alien&#x2F;resin&#x2F;flower_bud_enemy">flower bud</a> - Kudzu Flower Bud</li>
@@ -3433,7 +3439,7 @@ uranium</li>
 </main>
 <footer>
     yogstation.dme
-    <a href="https://github.com/Moltijoe/Yogstation/tree/f4745862466e3f182e2b6a4ade7db4dd6f087c97">f474586</a>
+    <a href="https://github.com/Moltijoe/Yogstation/tree/6bdde0ffb90da2153cb52b5e2c09edf63e24fb44">6bdde0f</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.1</a></footer>
 </body>
 </html>
