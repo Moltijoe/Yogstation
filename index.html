@@ -29,8 +29,8 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(755 modules,
-    2017/9411 macros, 21.4%)</aside></h3>
+<aside>(756 modules,
+    2022/9430 macros, 21.4%)</aside></h3>
 <ul class="index-tree modules">
     <li><span class="no-substance">_maps&#x2F;map_files&#x2F;</span><a href="_maps/map_files/IceMeta.html" title="_maps&#x2F;map_files&#x2F;IceMeta">IceMeta</a></li>
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
@@ -138,6 +138,7 @@ General Public License version 3.
     <li><a href="code/__DEFINES/power.html" title="code&#x2F;__DEFINES&#x2F;power">power</a></li>
     <li><a href="code/__DEFINES/preferences.html" title="code&#x2F;__DEFINES&#x2F;preferences">preferences</a></li>
     <li><a href="code/__DEFINES/procpath.html" title="code&#x2F;__DEFINES&#x2F;procpath">procpath</a></li>
+    <li><a href="code/__DEFINES/projectiles.html" title="code&#x2F;__DEFINES&#x2F;projectiles">projectiles</a></li>
     <li><a href="code/__DEFINES/qdel.html" title="code&#x2F;__DEFINES&#x2F;qdel">qdel</a> - Defines that give qdel hints.</li>
     <li><a href="code/__DEFINES/reactions.html" title="code&#x2F;__DEFINES&#x2F;reactions">reactions</a></li>
     <li><a href="code/__DEFINES/reactor.html" title="code&#x2F;__DEFINES&#x2F;reactor">reactor</a></li>
@@ -1111,7 +1112,7 @@ SPDX-License-Identifier: MIT</li>
 
 
 <h3 id="types">Types
-<aside>(1063 detailed/1919 documented/29179 total, 6.6%)</aside></h3>
+<aside>(1064 detailed/1920 documented/29194 total, 6.6%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a> - A grouping of tiles into a logical space, mostly used by map editors<ul class="index-tree">
@@ -2120,7 +2121,6 @@ Loops while a given condition is TRUE.</li>
     </ul></li>
     <li class="has-children"><a href="datum/objective.html" title="&#x2F;datum&#x2F;objective">generic objective</a><ul class="index-tree">
     <li><span class="no-substance">assassinate&#x2F;</span><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;assassinate&#x2F;obsessed">obsessed</span> - CREEPY objectives (few chosen per obsession)</li>
-    <li><a href="datum/objective/break_machinery.html" title="&#x2F;datum&#x2F;objective&#x2F;break_machinery">Destroy some machines</a> - Break shit - the objective</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;objective&#x2F;gangrel_clan_objective">frenzy</span> - Enter Frenzy repeatedly</li>
     <li class="has-children"><span title="&#x2F;datum&#x2F;objective&#x2F;minor">Minor Objectives</span> - Objectives given to traitors without hijack or martyr, just small flavour things that shouldn't be too hard or impactful.<ul class="index-tree">
     <li><a href="datum/objective/minor/deadpics.html" title="&#x2F;datum&#x2F;objective&#x2F;minor&#x2F;deadpics">Take a picture of your target&#x27;s dead body</a> - Escape with a picture of their dead body</li>
@@ -3524,6 +3524,7 @@ Enables crew to create requests, crew can sign up to perform the request, and th
     </ul></li>
     <li><a href="obj/machinery/conveyor.html" title="&#x2F;obj&#x2F;machinery&#x2F;conveyor">conveyor belt</a></li>
     <li><a href="obj/machinery/cryopod.html" title="&#x2F;obj&#x2F;machinery&#x2F;cryopod">cryogenic freezer</a></li>
+    <li><a href="obj/machinery/deepfryer.html" title="&#x2F;obj&#x2F;machinery&#x2F;deepfryer">deep fryer</a></li>
     <li class="has-children"><a href="obj/machinery/door.html" title="&#x2F;obj&#x2F;machinery&#x2F;door">door</a><ul class="index-tree">
     <li><a href="obj/machinery/door/airlock.html" title="&#x2F;obj&#x2F;machinery&#x2F;door&#x2F;airlock">airlock</a></li>
     </ul></li>
@@ -3699,6 +3700,7 @@ Chance to give Bat form, or turn them into a bat.</li>
     <li class="has-children"><a href="obj/structure/slime_crystal.html" title="&#x2F;obj&#x2F;structure&#x2F;slime_crystal">slimic pylon</a><ul class="index-tree">
     <li><a href="obj/structure/slime_crystal/bluespace.html" title="&#x2F;obj&#x2F;structure&#x2F;slime_crystal&#x2F;bluespace">bluespace</a></li>
     </ul></li>
+    <li><span class="no-substance">spawner&#x2F;nether&#x2F;</span><a href="obj/structure/spawner/nether/bluespace_tap.html" title="&#x2F;obj&#x2F;structure&#x2F;spawner&#x2F;nether&#x2F;bluespace_tap">bluespace_tap</a></li>
     <li class="has-children"><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;statue">statue</span><ul class="index-tree">
     <li><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;statue&#x2F;bananium">bananium</span> - bananium</li>
     <li><span class="no-substance" title="&#x2F;obj&#x2F;structure&#x2F;statue&#x2F;cheese">cheese</span> - cheese</li>
@@ -3758,7 +3760,7 @@ uranium</li>
 </main>
 <footer>
     yogstation.dme
-    <a href="https://github.com/Moltijoe/Yogstation/tree/45bf46b7734ea81e28694aef537439ab1ec00689">45bf46b</a>
+    <a href="https://github.com/Moltijoe/Yogstation/tree/efd651eddb679e7bb02d11d20e53806f06339da0">efd651e</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.8.0</a></footer>
 </body>
 </html>
