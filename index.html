@@ -29,8 +29,8 @@ General Public License version 3.
 
 
 <h3 id="modules">Modules
-<aside>(877 modules,
-    3089/10946 macros, 28.2%)</aside></h3>
+<aside>(879 modules,
+    3102/10963 macros, 28.3%)</aside></h3>
 <ul class="index-tree modules">
     <li><span class="no-substance">_maps&#x2F;map_files&#x2F;</span><a href="_maps/map_files/IceMeta.html" title="_maps&#x2F;map_files&#x2F;IceMeta">IceMeta</a></li>
     <li class="has-children"><span title="code">code</span><ul class="index-tree">
@@ -186,6 +186,7 @@ General Public License version 3.
     <li><a href="code/__DEFINES/tgui.html" title="code&#x2F;__DEFINES&#x2F;tgui">tgui</a></li>
     <li><a href="code/__DEFINES/time.html" title="code&#x2F;__DEFINES&#x2F;time">time</a></li>
     <li><a href="code/__DEFINES/tools.html" title="code&#x2F;__DEFINES&#x2F;tools">tools</a></li>
+    <li><a href="code/__DEFINES/traitor.html" title="code&#x2F;__DEFINES&#x2F;traitor">traitor</a></li>
     <li class="has-children"><a href="code/__DEFINES/traits.html" title="code&#x2F;__DEFINES&#x2F;traits">traits</a><ul class="index-tree">
     <li><a href="code/__DEFINES/traits/declarations.html" title="code&#x2F;__DEFINES&#x2F;traits&#x2F;declarations">declarations</a></li>
     <li><a href="code/__DEFINES/traits/sources.html" title="code&#x2F;__DEFINES&#x2F;traits&#x2F;sources">sources</a></li>
@@ -1210,6 +1211,7 @@ SPDX-License-Identifier: MIT</li>
     </ul></li>
     <li class="has-children"><span title="yogstation&#x2F;code&#x2F;game">game</span><ul class="index-tree">
     <li><span class="no-substance">gamemodes&#x2F;battle_royale&#x2F;</span><a href="yogstation/code/game/gamemodes/battle_royale/battleroyale.html" title="yogstation&#x2F;code&#x2F;game&#x2F;gamemodes&#x2F;battle_royale&#x2F;battleroyale">battleroyale</a></li>
+    <li><span class="no-substance">machinery&#x2F;computer&#x2F;</span><a href="yogstation/code/game/machinery/computer/atmos_sim.html" title="yogstation&#x2F;code&#x2F;game&#x2F;machinery&#x2F;computer&#x2F;atmos_sim">atmos_sim</a></li>
     <li><span class="no-substance">mecha&#x2F;</span><a href="yogstation/code/game/mecha/mecha_wreckage.html" title="yogstation&#x2F;code&#x2F;game&#x2F;mecha&#x2F;mecha_wreckage">mecha_wreckage</a></li>
     <li class="has-children"><span title="yogstation&#x2F;code&#x2F;game&#x2F;objects">objects</span><ul class="index-tree">
     <li><span class="no-substance">effects&#x2F;</span><a href="yogstation/code/game/objects/effects/landmarks.html" title="yogstation&#x2F;code&#x2F;game&#x2F;objects&#x2F;effects&#x2F;landmarks">landmarks</a></li>
@@ -1265,7 +1267,7 @@ SPDX-License-Identifier: MIT</li>
 
 
 <h3 id="types">Types
-<aside>(1252 detailed/2120 documented/30032 total, 7.1%)</aside></h3>
+<aside>(1253 detailed/2121 documented/30046 total, 7.1%)</aside></h3>
 <ul class="index-tree">
     <li><a href="global.html" title="(global)">(global)</a></li>
     <li class="has-children"><a href="area.html" title="&#x2F;area">area</a> - A grouping of tiles into a logical space, mostly used by map editors<ul class="index-tree">
@@ -1799,6 +1801,7 @@ in the last X seconds. Taking any damage will reset this cooldown.</li>
     <li><span class="no-substance" title="&#x2F;datum&#x2F;component&#x2F;riding&#x2F;human">human</span> - Yes, I said humans. No, this won't end well...</li>
     </ul></li>
     <li><a href="datum/component/shadowlands.html" title="&#x2F;datum&#x2F;component&#x2F;shadowlands">shadowlands</a></li>
+    <li><a href="datum/component/shielded.html" title="&#x2F;datum&#x2F;component&#x2F;shielded">shielded</a></li>
     <li><a href="datum/component/slippery.html" title="&#x2F;datum&#x2F;component&#x2F;slippery">Slip behaviour component</a> - Add this component to an object to make it a slippery object, slippery objects make mobs that cross them fall over.
 Items with this component that get picked up may give their parent mob the slip behaviour.</li>
     <li><a href="datum/component/spawner.html" title="&#x2F;datum&#x2F;component&#x2F;spawner">spawner</a></li>
@@ -2864,6 +2867,8 @@ Hosts tgchat and other nice features.</li>
     <li><a href="datum/tgui_window.html" title="&#x2F;datum&#x2F;tgui_window">tgui_window</a></li>
     <li><a href="datum/timedevent.html" title="&#x2F;datum&#x2F;timedevent">Timed Event</a> - This is the actual timer, it contains the callback and necessary data to maintain
 the timer.</li>
+    <li><a href="datum/traitor_backstory.html" title="&#x2F;datum&#x2F;traitor_backstory">traitor_backstory</a></li>
+    <li><a href="datum/traitor_faction.html" title="&#x2F;datum&#x2F;traitor_faction">traitor_faction</a></li>
     <li class="has-children"><a href="datum/turf_reservation.html" title="&#x2F;datum&#x2F;turf_reservation">turf_reservation</a><ul class="index-tree">
     <li><a href="datum/turf_reservation/transit.html" title="&#x2F;datum&#x2F;turf_reservation&#x2F;transit">transit</a></li>
     </ul></li>
@@ -3367,7 +3372,7 @@ Attacking any human mob (typically yourself) will cause their arm to instantly b
     <li class="has-children"><a href="obj/item/clothing.html" title="&#x2F;obj&#x2F;item&#x2F;clothing">clothing</a><ul class="index-tree">
     <li><span class="no-substance">accessory&#x2F;</span><span class="no-substance" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;accessory&#x2F;dogtags">Dogtags</span> - Dog Tags</li>
     <li><a href="obj/item/clothing/glasses.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;glasses">glasses</a></li>
-    <li><span class="no-substance">gloves&#x2F;</span><a href="obj/item/clothing/gloves/gasharpoon.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;gloves&#x2F;gasharpoon">gasharpoon</a></li>
+    <li><span class="no-substance">gloves&#x2F;</span><a href="obj/item/clothing/gloves/gasharpoon.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;gloves&#x2F;gasharpoon">gas-harpoon</a></li>
     <li class="has-children"><a href="obj/item/clothing/head.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head">head</a><ul class="index-tree">
     <li><a href="obj/item/clothing/head/foilhat.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head&#x2F;foilhat">tinfoil hat</a></li>
     <li><a href="obj/item/clothing/head/hardhat.html" title="&#x2F;obj&#x2F;item&#x2F;clothing&#x2F;head&#x2F;hardhat">hard hat</a></li>
@@ -3669,9 +3674,6 @@ Given to Nuke Ops members.</li>
     <li><a href="obj/item/paper/paperwork/mech_form.html" title="&#x2F;obj&#x2F;item&#x2F;paper&#x2F;paperwork&#x2F;mech_form">R&amp;D Mech Request Form (Form SCI-9)</a> - A form for requesting a mech.</li>
     <li><a href="obj/item/paper/paperwork/rd_form.html" title="&#x2F;obj&#x2F;item&#x2F;paper&#x2F;paperwork&#x2F;rd_form">R&amp;D Request Form (Form SCI-3)</a> - A form for requesting something be researched.</li>
     <li><a href="obj/item/paper/paperwork/sec_incident_report.html" title="&#x2F;obj&#x2F;item&#x2F;paper&#x2F;paperwork&#x2F;sec_incident_report">Security Incident Report (Form SEC-030)</a> - An incident form for security officers</li>
-    </ul></li>
-    <li class="has-children"><span class="no-substance">yog&#x2F;ruins&#x2F;</span><a href="obj/item/paper/yog/ruins/academy.html" title="&#x2F;obj&#x2F;item&#x2F;paper&#x2F;yog&#x2F;ruins&#x2F;academy">Debug Paper</a> - Papers that add flavor to the Wizard Academy<ul class="index-tree">
-    <li><a href="obj/item/paper/yog/ruins/academy/trey_wizard_lizard.html" title="&#x2F;obj&#x2F;item&#x2F;paper&#x2F;yog&#x2F;ruins&#x2F;academy&#x2F;trey_wizard_lizard">RE: Trey of the Shattered Voice</a> - A demonstration paper. See <a href="obj/item/paper/yog/ruins/academy.html" title="/obj/item/paper/yog/ruins/academy">Wizard Academy Ruins Papers.</a></li>
     </ul></li>
     </ul></li>
     <li><a href="obj/item/paper_bundle.html" title="&#x2F;obj&#x2F;item&#x2F;paper_bundle">paper bundle</a></li>
@@ -4199,7 +4201,7 @@ uranium</li>
 </main>
 <footer>
     yogstation.dme
-    <a href="https://github.com/Moltijoe/Yogstation/tree/13f4dcff666d93003fd5dbf9ead8ce194a233d67">13f4dcf</a>
+    <a href="https://github.com/Moltijoe/Yogstation/tree/800fbe40aed72484f0817551919b5e4ebf225079">800fbe4</a>
         (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.8.0</a></footer>
 </body>
 </html>
