@@ -182,48 +182,19 @@
 	long_description = "Yeah, you're fucked buddy."
 	specialization_flag = ALL_DARKSPAWN_CLASSES
 	class_color = LIGHT_COLOR_ELECTRIC_GREEN
-	choosable = FALSE
+	//choosable = FALSE
 	starting_abilities = list(/datum/psi_web/innate_darkspawn, /datum/psi_web/fighter, /datum/psi_web/scout, /datum/psi_web/warlock)
 	eye_icon = "admeme_eyes"
 	class_icon = "admeme_sigils"
 	var/last_colour = 0
 	var/list/hsv
-	var/mutable_appearance/cached_eyes
-	var/mutable_appearance/cached_sigil
-
-/datum/component/darkspawn_class/admin/Initialize()
-	. = ..()
-	START_PROCESSING(SSfastprocess, src)
-
-/datum/component/darkspawn_class/admin/Destroy()
-	STOP_PROCESSING(SSfastprocess, src)
-	return ..()
 	
 /datum/component/darkspawn_class/admin/update_owner_overlay(atom/source, list/overlays)
-	SIGNAL_HANDLER
-
-	if(!isshadowperson(source))
-		return //so they only get the overlay when divulged
-
-	//draw both the overlay itself and the emissive overlay
-	cached_eyes = mutable_appearance(icon_file, eye_icon, -HANDCUFF_LAYER)
-	cached_eyes.color = class_color
-	overlays += cached_eyes
-
-	overlays += emissive_appearance(icon_file, eye_icon, source) //the emissive overlay for the eyes
-	
-	cached_sigil = mutable_appearance(icon_file, class_icon, -HANDCUFF_LAYER)
-	cached_sigil.color = class_color
-	overlays += cached_sigil
-
-	overlays += emissive_appearance(icon_file, class_icon, source) //the emissive overlay for the sigil
-
-/datum/component/darkspawn_class/admin/process(delta_time)
-	if(hsv)
-		hsv = RotateHue(hsv, (world.time - last_colour) * 15)
-	else
+	if(!hsv)
 		hsv = RGBtoHSV(rgb(255, 0, 0))
+	hsv = RotateHue(hsv, (world.time - last_colour) * 15)
 	last_colour = world.time
-	
 	class_color = HSVtoRGB(hsv) //rainbow
-	cached_sigil.color = class_color
+
+	addtimer(CALLBACK(source, TYPE_PROC_REF(/atom, update_appearance), UPDATE_OVERLAYS), 4, TIMER_UNIQUE|TIMER_OVERRIDE) //regularly refresh the overlays
+	return ..()
