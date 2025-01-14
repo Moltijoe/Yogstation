@@ -182,7 +182,7 @@
 	long_description = "Yeah, you're fucked buddy."
 	specialization_flag = ALL_DARKSPAWN_CLASSES
 	class_color = LIGHT_COLOR_ELECTRIC_GREEN
-	//choosable = FALSE
+	choosable = FALSE
 	starting_abilities = list(/datum/psi_web/innate_darkspawn, /datum/psi_web/fighter, /datum/psi_web/scout, /datum/psi_web/warlock)
 	eye_icon = "admeme_eyes"
 	class_icon = "admeme_sigils"
